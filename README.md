@@ -1,5 +1,3 @@
-
-
 CRUDE OIL PRICE PREDICTION
 
 Team Members:
