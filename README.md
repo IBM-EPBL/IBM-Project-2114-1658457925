@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/101931464/199039653-b2c9f968-e937-491e-ae58-9c4d745421ad.png)
+
 
 CRUDE OIL PRICE PREDICTION
 
