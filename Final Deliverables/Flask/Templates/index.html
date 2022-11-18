@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crude Oil Price Prediction</title>
+    <link rel="icon" type="image/png" href="../static/css/oil-icon.png">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <style>
+        input[type=text]{
+            width: 100%;
+            border: 2px solid #aaa;
+            border-radius: 4px;
+            margin: 8px 0;
+            outline: none;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: 3s;
+        }
+        input[type=text]:focus{
+            border-color:  rgb(237, 144, 12);;
+            box-shadow: 0 0 8px 0  rgb(237, 144, 12);;
+        }
+    </style>
+</head>
+<body>
+    <header class="homepage" >
+        <div class="navbar">
+            <a href="#"><h1>Crude Oil <span>Price Prediction</span></h1></a>
+            <!-- <div class="nav-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div> -->
+            <!-- <img src="../static/css/menu-icon.png" alt="menu" class="menu-icon"> -->
+        </div>
+        <div class="Div">
+            <h1><span>Crude </span>oil <span>Price</span> Prediction</h1>
+            <p>
+                With our web app, you can easily predict the prices of crude oil by entering the prices of crude oil for 10 days as input!!
+            </p>
+            
+            
+            
+            <form action="/predict" method="POST" enctype = "multipart/form-data">
+                <input type="text" name="val" placeholder="Enter the crude oil price for first 10 days" >
+                 <br> <br> <br>
+                <input type="submit" class="button-class" placeholder="Predict">
+            </form><br> <br>
+            <div>
+                <h2>Predicted price is: {{prediction}}</h2>
+                
+            </div>
+            
+            
+           
+           
+        </div>
+        <img style="margin-top: 200px;margin-right: 10px"  alt="crude" src="../static/css/crude.png" ALIGN="right" width="200px" height="200px">
+    </header>
+    
+</body>
+</html>
